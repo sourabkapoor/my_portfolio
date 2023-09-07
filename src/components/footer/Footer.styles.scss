@@ -1,0 +1,17 @@
+.footerMain {
+  border-top: 3px solid rgb(255, 70, 70);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .inline {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    svg {
+      color: red;
+    }
+  }
+}
