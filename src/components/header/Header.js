@@ -13,11 +13,17 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import me from "../../assets/images/me.jpg"
 import "./Header.styles.scss"
+import { Link, useNavigate } from 'react-router-dom';
 
-const pages = ['Home', 'About', 'Projects'];
+const pages = [
+  {page: 'Home', address: "/"}, 
+  {page: 'About', address: "/about"}, 
+  {page: 'Projects', address: "/projects"}
+];
 
 const Header = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const navigate = useNavigate()
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -60,9 +66,14 @@ const Header = () => {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              {pages.map((page) => (
+              {pages.map(({page, address}) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                  <Link
+                    // textAlign={"center"}
+                    to={address}
+                  >
+                    {page}
+                  </Link>
                 </MenuItem>
               ))}
             </Menu>
@@ -86,10 +97,10 @@ const Header = () => {
             Sourab
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page) => (
+            {pages.map(({page, address}) => (
               <Button
                 key={page}
-                onClick={handleCloseNavMenu}
+                onClick={() => navigate(address)}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
                 {page}

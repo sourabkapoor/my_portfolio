@@ -1,0 +1,5 @@
+export const routesList = {
+  home: "/",
+  about: "/about",
+  projects: "/projects",
+}

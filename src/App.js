@@ -1,15 +1,26 @@
 import React from "react"
 import './App.scss';
-import Footer from "./components/footer/Footer"
-import Header from "./components/header/Header";
+import { routes } from "./routes/MainRoutes";
+import {
+  createBrowserRouter,
+  RouterProvider
+} from "react-router-dom";
+import Layout from "./components/layout/Layout";
+import { Page404 } from "./components/page404/Page404";
 
 function App() {
+  const router = createBrowserRouter([
+    {
+      element: <Layout />,
+      errorElement: <Page404 />,
+      children: routes
+    }
+  ]);
+
   return (
-    <div className="App">
-      <Header />
-      <div className="mainContent">Body</div>
-      <Footer />
-    </div>
+    <RouterProvider router={router}>
+      <Layout />
+    </RouterProvider>
   );
 }
 
