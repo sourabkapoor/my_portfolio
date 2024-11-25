@@ -101,7 +101,7 @@ const Header = () => {
               <Button
                 key={page}
                 onClick={() => navigate(address)}
-                sx={{ my: 2, color: 'white', display: 'block' }}
+                sx={{ my: 2, display: 'block' }}
               >
                 {page}
               </Button>
@@ -109,7 +109,7 @@ const Header = () => {
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Thats me!">
+            <Tooltip title="That's me!">
               <IconButton sx={{ p: 0 }}>
                 <Avatar alt="SK" src={me} />
               </IconButton>

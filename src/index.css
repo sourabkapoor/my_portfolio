@@ -5,10 +5,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: black;
-  color: white;
+  background-color: #F8F2DC;
+  color: black;
 }
 
 :root {
-  --theme: black;
+  --theme: #F8F2DC;
 }
