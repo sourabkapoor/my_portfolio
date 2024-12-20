@@ -8,6 +8,30 @@
   margin-bottom: 34px;
 }
 
-.subHeading {
+// .subHeading {
 
+// }
+
+.skillsWall {
+  text-align: center;
+  margin: 20px 15px 34px;
+  position: relative;
+  height: var(--section);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    font-size: var(--heading5);
+    padding: 0 24px;
+  }
+}
+
+.moreAbout, .projects {
+  margin: 20px 15px 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--heading4);
+  height: var(--section);
 }

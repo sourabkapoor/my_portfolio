@@ -11,4 +11,11 @@ body {
 
 :root {
   --theme: #F8F2DC;
+  --heading1: 97px;
+  --heading2: 57px;
+  --heading3: 40px;
+  --heading4: 32px;
+  --heading5: 26px;
+
+  --section: 350px
 }

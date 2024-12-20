@@ -1,0 +1,45 @@
+.bubble {
+  border-radius: 100%;
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  
+  // animation: bubble 13s linear infinite alternate;
+  // animation: move 5s linear infinite;
+
+  img {
+    // position: relative;
+    height: 50px;
+    width: 50px;
+    // object-fit: contain;
+    z-index: -1;
+    pointer-events: none;
+  }
+
+  // :nth-child(1) {
+  //   top: 10%;
+  //   left: 20%;
+  // }
+  // :nth-child(2) {
+  //   top: 40%;
+  //   left: 70%;
+  // }
+  // :nth-child(3) {
+  //   top: 80%;
+  //   left: 50%;
+  // }
+}
+
+// @keyframes move {
+//   0% {
+//     transform: translate(0, 0);
+//   }
+//   100% {
+//     transform: translate(100px, 100px);
+//   }
+// }
