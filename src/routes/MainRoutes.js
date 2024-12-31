@@ -1,5 +1,6 @@
 import React from 'react'
 import { MainBody } from '../components/mainBody/MainBody';
+import {About} from "../components/about/About"
 import {routesList} from "./AllRoutes"
 
 export const routes = [
@@ -9,7 +10,7 @@ export const routes = [
   },
   {
     path: routesList.about,
-    element: <div>About</div>
+    element: <About />
   },
   {
     path: routesList.projects,

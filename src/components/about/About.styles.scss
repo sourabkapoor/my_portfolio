@@ -1,0 +1,79 @@
+.about {
+  text-align: center;
+}
+
+.sectionHeading {
+  font-size: var(--heading4);
+  padding: 24px;
+}
+
+.intro {
+  height: var(--section);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 12px;
+  padding: 54px;
+  margin-bottom: 24px;
+
+  .info {
+    font-size: 25px;
+    text-align: left;
+  }
+
+  .heroImage {
+    height: 100%;
+    border-radius: 12px;
+    // border: 2px dotted black;
+    box-shadow: rgba(66, 146, 206, 0.4) 5px 5px, rgba(66, 146, 206, 0.3) 10px 10px, rgba(66, 146, 206, 0.2) 15px 15px, rgba(66, 146, 206, 0.1) 20px 20px, rgba(66, 146, 206, 0.05) 25px 25px;
+  }
+
+  .heroImage:hover {
+    scale: 1.05;
+    transition: 1.2s ease-in-out;
+  }
+}
+
+.parallaxImages {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 6px;
+}
+
+.myCard {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  width: 70vw;
+  border-radius: 12px;
+  background-color: #f8f8f8;
+  padding: 15px;
+  margin: 0 auto 15px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+  .img {
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+  .infoSection {
+    text-align: left;
+    
+    .heading {
+      font-size: var(--subText);
+      font-weight: 600;
+    }
+
+    .info {
+      font-size: var(--subText);
+
+      .bold {
+        font-weight: 600;
+      }
+    }
+  }
+}
+
