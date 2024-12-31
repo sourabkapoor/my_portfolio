@@ -63,10 +63,10 @@ export const About = () => {
     {/* intro */}
     <div className='intro'>
       <div className='info'>
-        I’m Sourab Kapoor, a self-taught Full Stack Developer who loves building cool stuff for the web (and occasionally breaking it while experimenting). Over the last 3+ years, I’ve tackled all kinds of projects with some amazing teams, learning a ton along the way about what works—and what doesn’t.
+        I’m Sourab Kapoor, a self-taught Full Stack Developer who loves building cool stuff for the web (and occasionally breaking it while experimenting). With over 3+ years of experience, I’ve tackled different kinds of projects with some amazing teams, learning a ton along the way about what works—and what doesn’t.
         <br/>
         <br/>
-        When I’m not coding with React, Node.js, Django, or Python (or pretending to know everything about them), you’ll probably find me planning my next trip or lost somewhere off the beaten path. I’m all about blending creativity with code and keeping things light while crafting apps that people actually enjoy using. Life’s too short for bad coffee and boring websites, right?
+        When I’m not coding with React, Node.js, Django, or Python (or trying to figure out why something isn’t working), you’ll probably find me planning my next trip or hunting for a great cup of coffee. I’m all about blending creativity with code and keeping things light while crafting apps that people actually enjoy using. Life’s too short for bad coffee and boring websites, right?
       </div>
       {/* Hero Image */}
       <img className='heroImage' src={heroImage} alt="..."></img>
