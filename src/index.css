@@ -19,5 +19,9 @@ body {
 
   --subText: 18px;
 
-  --section: 350px
+  --section: 350px;
+
+  --black: #000000;
+  --white: white;
+
 }

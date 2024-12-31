@@ -1,0 +1,70 @@
+.projectsContainer {
+  // padding: 45px;
+  text-align: center;
+
+}
+
+.projectsBlock {
+  padding: 45px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.projectMain {
+  width: 540px;
+  height: 100%;
+  border: 2px solid black;
+  border-radius: 8px;
+  // padding: 0 0 8px;
+
+  .projectImg {
+    border-bottom: 1px solid black;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .projectInfoBlock {
+    padding: 18px;
+
+    .heading {
+      font-size: var(--heading5);
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .disc {
+      font-size: 18px;
+      text-align: left;
+      margin-bottom: 8px;
+    }
+
+    .actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 0px 0px;
+
+      .visit {
+        text-decoration: none;
+        color: var(--white);
+        background-color: var(--black);
+        padding: 8px 10px;
+        border-radius: 6px;
+      }
+
+      .visit:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+
+      img {
+        height: 40px;
+        width: 40px;
+      }
+    }
+  }
+}
