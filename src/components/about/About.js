@@ -9,6 +9,9 @@ import ycet from "../../assets/images/ycet.png"
 import st from "../../assets/images/st.jpg"
 import { Parallax } from '../parallax/Parallax'
 
+const images = require.context('../../assets/life', true)
+const imageList = images.keys().map(image => images(image));
+
 export const About = () => {
   const experiece = [
     {
@@ -96,24 +99,28 @@ export const About = () => {
 
     {/* Extra curicular */}
     <div>
-      <div className='sectionHeading'>There is more to life than coding!</div>
-      {/* <Parallax baseVelocity={-5}>
+      <div className='sectionHeading'>Because life’s not all about staring at a screen!</div>
+      <Parallax baseVelocity={-5}>
         <div className='parallaxImages'>
-          <img src={'https://drive.google.com/thumbnail?id=1WnoZR0S34WuuGmUyZDEBR9R74Mc37LNb'} alt=".." />
-          <img src={'https://drive.google.com/thumbnail?id=1AYuB6vtCQKneLe2oFXjpEJG-QgD5yaBw'} alt=".." />
-          <img src={'https://drive.google.com/thumbnail?id=1xykYWKCa3efApAzaa7tdWrLQdxD403_T'} alt=".." />
-          <img src={'https://drive.google.com/thumbnail?id=1s5fasWKe9xgTT6D3jdLhUYy_xaHsXQDt'} alt={'..'} />
-          <img src={'https://drive.google.com/thumbnail?id=1jsUXlPzAdATRXp0YI4ITT0g56jsCEmjs'} alt={'..'} />
-          <img src={'https://drive.google.com/thumbnail?id=1D-QgbOPfrMCwq668W8GKFSpMlxiUfucP'} alt={'..'} />
+          {imageList?.slice(0, 9).map((img, key) => {
+            return <img src={img} alt={".."} key={`firstRow${key}`} />
+          })}
         </div>
       </Parallax>
       <Parallax baseVelocity={5}>
         <div className='parallaxImages'>
-          <img src={'https://drive.google.com/thumbnail?id=1LU0laoFHJxo1FP0NSGRMcJQ9kn9ZU2VX'} alt={'..'} />
-          <img src={'https://drive.google.com/thumbnail?id=1ESfGSIar-kQ6MtgmRwFBBUYECylhnJWC'} alt={'..'} />
-          <img src={'https://drive.google.com/thumbnail?id=124sGZCQERnhzWIp1m3HQn1wmENhT6431'} alt={'..'} />
+          {imageList?.slice(9, 18).map((img, key) => {
+            return <img src={img} alt={".."} key={`SecondRow${key}`} />
+          })}
         </div>
-      </Parallax> */}
+      </Parallax>
+      <Parallax baseVelocity={-5}>
+        <div className='parallaxImages'>
+          {imageList?.slice(19, 27).map((img, key) => {
+            return <img src={img} alt={".."} key={`ThirdRow${key}`} />
+          })}
+        </div>
+      </Parallax>
     </div>
     
     {/* Things I enjoy doing */}
