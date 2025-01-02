@@ -14,11 +14,13 @@ import MenuItem from '@mui/material/MenuItem';
 import me from "../../assets/images/me.jpg"
 import "./Header.styles.scss"
 import { Link, useNavigate } from 'react-router-dom';
+import {routesList} from "../../routes/AllRoutes"
 
 const pages = [
-  {page: 'Home', address: "/"}, 
-  {page: 'About', address: "/about"}, 
-  {page: 'Projects', address: "/projects"}
+  {page: 'Home', address: routesList.home}, 
+  {page: 'About', address: routesList.about}, 
+  {page: 'Projects', address: routesList.projects},
+  {page: 'resume', address: routesList.resume},
 ];
 
 const Header = () => {

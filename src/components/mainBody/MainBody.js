@@ -1,16 +1,23 @@
 import React from 'react'
 import "./MainBody.styles.scss"
 import { TechWall } from '../techwall/TechWall'
+import TypeWriter from '../typewriter/TypeWriter'
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import {routesList} from '../../routes/AllRoutes'
 // import LightSource from '../lightSource/LightSource'
 
 export const MainBody = () => {
+  const me = ['a full stack developer', 'a freelancer', 'a teacher', 'a traveler', 'a front-end developer']
 
-  return <div>
+  return <div className='mainContainer'>
     <div class='section'>
       {/* Heading */}
       <div class="heroText">Hi! I am Sourab kapoor</div>
       {/* Changing subhero */}
-      <div className='subHero'>- a Full Stack developer</div>
+      <div className='subHero'>
+        <span>{`- `}</span>
+        <TypeWriter texts={me} typingSpeed={200} pauseSpeed={100} />
+      </div>
     </div>
     
 
@@ -21,12 +28,24 @@ export const MainBody = () => {
       </p>
     </div>
 
-    {/* Link the about page */}
-    <div className='moreAbout'>Get to know more about me....</div>
+    {/* Link t0 about and project page */}
+    <div className='extraSubLink'>
+      <div className='moreAbout'>
+        <>The person behind the code</>
+        <a href={routesList.about}><button class="customButton"><ArrowForwardIcon /></button></a>
+      </div>
 
-    {/* Link to projects page */}
-    <div className='projects'>Check out my other projects and work</div>
+      {/* Link to projects page */}
+      <div className='projects'>
+        <>Have a look at my coding adventures!</>
+        <a href={routesList.projects}><button class="customButton"><ArrowForwardIcon /></button></a>
+      </div>
 
+      <div className='resume'>
+        <>See my skills and experience in black and white.</>
+        <a href={routesList.resume}><button class="customButton"><ArrowForwardIcon /></button></a>
+      </div>
+    </div>
 
     {/* <div style={{position: "relative"}}>
       <LightSource />

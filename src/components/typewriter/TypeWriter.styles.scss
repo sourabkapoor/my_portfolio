@@ -1,0 +1,23 @@
+.typing-effect {
+  display: inline-block;
+  white-space: nowrap;
+  color: black;
+  overflow: hidden;
+  border-right: 3px solid black; /* Cursor effect */
+  animation: typing 2s steps(0) 1s forwards, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
