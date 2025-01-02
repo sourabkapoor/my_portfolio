@@ -8,7 +8,7 @@
 }
 
 .intro {
-  height: var(--section);
+  // height: var(--section);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -19,10 +19,12 @@
   .info {
     font-size: 25px;
     text-align: left;
+    margin-right: 24px;
   }
 
   .heroImage {
     height: 100%;
+    max-height: var(--section);
     border-radius: 12px;
     // border: 2px dotted black;
     box-shadow: rgba(66, 146, 206, 0.4) 5px 5px, rgba(66, 146, 206, 0.3) 10px 10px, rgba(66, 146, 206, 0.2) 15px 15px, rgba(66, 146, 206, 0.1) 20px 20px, rgba(66, 146, 206, 0.05) 25px 25px;
