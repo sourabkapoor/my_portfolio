@@ -132,8 +132,8 @@ export const About = () => {
         <div className='infoSection'>
           <div className='heading'>Teacher</div>
           <span className='info'>
-            I am a teacher to people of different background and age groups. I help people from all over the globe learn programming and build their dream projects. 
-            Check out my profile <a target='_blank' href='https://www.superprof.co.uk/learn-web-development-with-personalized-lessons-from-html-css-and-javascript-advanced-frameworks-like-react-node-and-django.html' rel="noreferrer">here</a>
+            I’m like a coding tour guide, helping people from all walks of life and every corner of the globe navigate the world of programming. Together, we turn ideas into dream projects—one line of code at a time. Wanna join the journey? Check out my profile&nbsp;
+            <a target='_blank' href='https://www.superprof.co.uk/learn-web-development-with-personalized-lessons-from-html-css-and-javascript-advanced-frameworks-like-react-node-and-django.html' rel="noreferrer">here!</a>
           </span>
         </div>
       </div>
@@ -143,7 +143,7 @@ export const About = () => {
         <div className='infoSection'>
           <div className='heading'>Freelance Developer</div>
           <span className='info'>
-            I am also a freelancer who loves to work on quality projects and help others. This also helps me learn new skills and keep me motivated. 
+            I’m also a freelancer who’s all about teaming up on quality projects and helping others bring their ideas to life. It’s a win-win—I get to learn new skills, stay inspired, and keep the creativity flowing!
           </span>
         </div>
       </div>
@@ -163,7 +163,7 @@ export const About = () => {
         <div className='infoSection'>
           <div className='heading'>Traveller</div>
           <span className='info'>
-            And finally if you missed that by any chance, Yes I LOVE to travel. It enables me to calm my mind and learn about new places and people. I try to discover as many new places as I can. Planning on some trip and need company. Count me in!
+            And just in case you missed it—yes, I’m obsessed with traveling! It’s my ultimate brain detox and my excuse to explore new places, meet amazing people, and soak up all the adventures life throws at me. Got a trip in mind and need a travel buddy? Say no more—I’m already packing!
           </span>
         </div>
       </div>

@@ -10,8 +10,8 @@ export default function Footer() {
     <div className="footerMain">
       <div className="connect">
         {"Let’s kickstart something awesome!"}
-        <a href="mailto:sourabkapoor@yahoo.com"><EmailIcon /></a>
-        <a href="https://www.linkedin.com/in/sourab-kapoor-b210ab1b2/"><LinkedInIcon /></a>
+        <a href="mailto:sourabkapoor@yahoo.com" target='_blank' rel="noreferrer"><EmailIcon /></a>
+        <a href="https://www.linkedin.com/in/sourab-kapoor-b210ab1b2/" target='_blank' rel="noreferrer"><LinkedInIcon /></a>
       </div>
 
       <span className="inline">Build with <FavoriteBorderIcon /> by Sourab</span>
