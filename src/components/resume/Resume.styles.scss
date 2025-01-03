@@ -16,3 +16,26 @@
   }
 
 }
+
+@media (max-width: 480px) {
+  .resumeContainer {
+    padding: 18px;
+
+    .resumeHeader {
+      font-size: var(--heading4);
+    }
+
+    .react-pdf__Document {
+      max-width: 100%;
+
+      .react-pdf__Page {
+        min-width: 100% !important;
+
+        canvas, div {
+          max-width: 100% !important;
+          height: 100% !important;
+        }
+      }
+    }
+  }
+}

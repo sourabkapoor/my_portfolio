@@ -25,10 +25,17 @@ body {
   --heading5: 26px;
 
   --subText: 18px;
+  --subText2: 16px;
 
   --section: 350px;
 
   --black: #000000;
   --white: white;
+
+  --mobilePagePadding: 18px;
+
+  /* @media (max-width: 480px) {
+    --section: 250px;
+  } */
 
 }

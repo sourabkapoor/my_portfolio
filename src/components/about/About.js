@@ -83,7 +83,7 @@ export const About = () => {
 
     {/* experience */}
     <div>
-      <div className='sectionHeading'>Experience</div>
+      <div className='sectionHeading mobileSection'>Experience</div>
       {experiece.map((jobs, key) => {
         return <ProgressCard key={`expereice${key}`} {...jobs} />
       })}
@@ -91,7 +91,7 @@ export const About = () => {
 
     {/* Education */}
     <div>
-      <div className='sectionHeading'>Education</div>
+      <div className='sectionHeading mobileSection'>Education</div>
       {education.map((edu, key) => {
         return <ProgressCard key={`eductaion${key}`} {...edu} />
       })}
@@ -99,7 +99,7 @@ export const About = () => {
 
     {/* Extra curicular */}
     <div>
-      <div className='sectionHeading'>Because life’s not all about staring at a screen!</div>
+      <div className='sectionHeading mobileSection'>Because life’s not all about staring at a screen!</div>
       <Parallax baseVelocity={-5}>
         <div className='parallaxImages'>
           {imageList?.slice(0, 9).map((img, key) => {
@@ -125,7 +125,7 @@ export const About = () => {
     
     {/* Things I enjoy doing */}
     <div>
-      <div className='sectionHeading'>Things I do out of curosity and passion</div>
+      <div className='sectionHeading mobileSection'>Things I do out of curosity and passion</div>
       {/* Teacher */}
       <div className="myCard">
         <img className='img' alt=".." src="https://2022.sommetnumerique.ca/fr/sponsors/download/logo/19" />

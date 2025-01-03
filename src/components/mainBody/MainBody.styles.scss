@@ -111,3 +111,37 @@
     padding: 0 40px;
   }
 }
+
+// Styles for mobile screen
+@media (max-width: 480px) {
+  .mainContainer {
+    padding: var(--mobilePagePadding);
+  }
+
+  .heroText {
+    font-size: 54px;
+    margin-bottom: 34px;
+  }  
+
+  .subHero {
+    font-size: 28px;
+    margin-bottom: 18px;
+    // width: 70vw;
+  }
+
+  .skillsWall {
+    margin: 20px 10px 30px;
+    height: 100%;
+    padding: 18px 0 18px;
+    font-weight: 500;
+  }
+
+  .extraSubLink {
+    text-align: center;
+
+    .moreAbout, .projects, .resume {
+      height: 100%;
+      padding: 10px 0 18px;
+    }
+  }
+}

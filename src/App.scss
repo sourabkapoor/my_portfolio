@@ -13,3 +13,11 @@
   // background-color: rgb(137, 137, 137);
 }
 
+@media (max-width: 480px) {
+  .section {
+    padding: 0;
+    height: 100%;
+    padding-bottom: 12px;
+  }
+}
+

@@ -7,6 +7,12 @@
   animation: typing 2s steps(0) 1s forwards, blink 0.75s step-end infinite;
 }
 
+@media (max-width: 480px) {
+  .typing-effect {
+    white-space: initial;
+  }
+}
+
 @keyframes typing {
   0% {
     width: 0;

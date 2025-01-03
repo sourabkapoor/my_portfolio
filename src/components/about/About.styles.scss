@@ -83,3 +83,47 @@
   }
 }
 
+@media (max-width: 480px) {
+  .about {
+    padding: var(--mobilePagePadding);
+  }
+
+  .sectionHeading {
+    padding: 12px;
+  }
+
+  .mobileSection {
+    margin-top: 38px;
+  }
+
+  .intro {
+    flex-direction: column;
+    padding: 8px;
+    text-align: center;
+    gap: 24px;
+
+    .info {
+      font-size: 18px;
+      margin-right: 0;
+      text-align: center;
+    }
+  }
+
+  .myCard {
+    margin: 0 0 16px;
+    width: unset;
+
+    .infoSection {
+      
+      .heading {
+        font-size: var(--subText2);
+      }
+  
+      .info {
+        font-size: var(--subText2);
+        max-width: 100%;
+      }
+    }
+  }
+}
+
