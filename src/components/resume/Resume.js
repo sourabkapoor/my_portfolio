@@ -6,7 +6,7 @@ import 'react-pdf/dist/Page/TextLayer.css';
 import 'react-pdf/dist/Page/AnnotationLayer.css';
 import './Resume.styles.scss'
 
-const resume = "/files/Sourab_Kapoor_CV.pdf"
+const resume = "/files/sourab_cv.pdf"
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   'pdfjs-dist/build/pdf.worker.min.mjs',
