@@ -10,7 +10,7 @@ export const Bubble = forwardRef(function Bubble({icon}, ref) {
   }
 
   useEffect(() => {
-    console.log(ref.current.offsetHeight)
+    // console.log(ref.current.offsetHeight)
     if (ref.current) {
       const { offsetWidth, offsetHeight } = ref.current;
       setContainerSize({ width: offsetWidth, height: offsetHeight });
