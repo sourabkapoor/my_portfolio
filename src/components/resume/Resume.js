@@ -1,10 +1,12 @@
 import React from 'react'
 import { Document, Page } from 'react-pdf';
-import resume from "../../assets/resume/Sourab_Kapoor_CV.pdf"
+// import resume from "../../../public/files/Sourab_Kapoor_CV.pdf"
 import { pdfjs } from 'react-pdf';
 import 'react-pdf/dist/Page/TextLayer.css';
 import 'react-pdf/dist/Page/AnnotationLayer.css';
 import './Resume.styles.scss'
+
+const resume = "/files/Sourab_Kapoor_CV.pdf"
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   'pdfjs-dist/build/pdf.worker.min.mjs',
