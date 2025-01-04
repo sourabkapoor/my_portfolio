@@ -18,7 +18,10 @@ export const Resume = () => {
   return (
     <div className='resumeContainer'>
       <div className='resumeHeader'>The official version of my journey—my resume.</div>
-      <Document file={resume}>
+      <Document 
+        file={resume}
+        onLoadError={(error) => console.error("Error while loading document:", error)}
+      >
         <Page pageNumber={1} />
       </Document>
     </div>
