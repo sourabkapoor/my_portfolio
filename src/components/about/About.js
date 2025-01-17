@@ -125,7 +125,7 @@ export const About = () => {
     
     {/* Things I enjoy doing */}
     <div>
-      <div className='sectionHeading mobileSection'>Things I do out of curosity and passion</div>
+      <div className='sectionHeading mobileSection'>Things I do out of curiosity and passion</div>
       {/* Teacher */}
       <div className="myCard">
         <img className='img' alt=".." src="https://2022.sommetnumerique.ca/fr/sponsors/download/logo/19" />

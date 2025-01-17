@@ -50,7 +50,7 @@ export const Projects = () => {
         <div className='projectMain'>
           <img className='projectImg' src="https://media2.dev.to/dynamic/image/width=1600,height=900,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fznde9s4sx4iysia7doil.png" alt=".." />
           <div className='projectInfoBlock'>
-            <div className='heading'>Emplyee of the Year</div>
+            <div className='heading'>Employee of the Year</div>
             <div className='disc'>
               A cheeky Selenium script to automate the attendance process on the Keka platform. I whipped this up at my previous company to dodge the daily clock-in/clock-out hassle and save 4 precious minutes of my life. Bonus feature: location spoofing, because sometimes "working from home" meant working from wherever my adventures took me. Efficiency and creativity, all in one!
             </div>
