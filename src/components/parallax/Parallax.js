@@ -28,7 +28,7 @@ export const Parallax = ({children, baseVelocity = 100}) => {
 
   const directionFactor = useRef(1);
   useAnimationFrame((t, delta) => {
-    let moveBy = directionFactor.current * baseVelocity * (delta / 3000);
+    let moveBy = directionFactor.current * baseVelocity * (delta / 6000);
 
     if (velocityFactor.get() < 0) {
       directionFactor.current = -1;
@@ -44,6 +44,8 @@ export const Parallax = ({children, baseVelocity = 100}) => {
   return (
     <div className="parallax">
       <motion.div className="scroller" style={{ x }}>
+        <span>{children} </span>
+        <span>{children} </span>
         <span>{children} </span>
         <span>{children} </span>
         <span>{children} </span>
