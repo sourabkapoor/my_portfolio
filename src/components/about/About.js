@@ -72,7 +72,7 @@ export const About = () => {
         When I’m not coding with React, Node.js, Django, or Python (or trying to figure out why something isn’t working), you’ll probably find me planning my next trip or hunting for a great cup of coffee. I’m all about blending creativity with code and keeping things light while crafting apps that people actually enjoy using. Life’s too short for bad coffee and boring websites, right?
       </div>
       {/* Hero Image */}
-      <img className='heroImage' src={heroImage} alt="..."></img>
+      <img className='heroImage' src={heroImage} alt="..." fetchPriority="high"></img>
     </div>
 
     {/* Skills */}

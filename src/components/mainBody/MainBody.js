@@ -12,7 +12,7 @@ export const MainBody = () => {
   return <div className='mainContainer'>
     <div class='section'>
       {/* Heading */}
-      <div class="heroText">Hi! I am Sourab kapoor</div>
+      <div class="heroText">Hi! I am Sourab Kapoor</div>
       {/* Changing subhero */}
       <div className='subHero'>
         <span>{`- `}</span>
@@ -28,7 +28,7 @@ export const MainBody = () => {
       </p>
     </div>
 
-    {/* Link t0 about and project page */}
+    {/* Link to about and project page */}
     <div className='extraSubLink'>
       <div className='moreAbout'>
         <>The person behind the code</>
