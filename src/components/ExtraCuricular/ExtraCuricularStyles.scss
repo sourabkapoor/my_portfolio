@@ -1,0 +1,11 @@
+.parallaxImages {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 6px;
+
+  img {
+    max-height: 155px;
+    border-radius: 12px;
+  }
+}

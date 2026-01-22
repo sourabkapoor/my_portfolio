@@ -1,4 +1,4 @@
-import React from 'react'
+import {Suspense, lazy} from 'react'
 import "./About.styles.scss"
 import heroImage from "../../assets/images/heroImage.jpeg"
 import { ProgressCard } from '../progressCard/ProgressCard'
@@ -7,10 +7,9 @@ import localytee from "../../assets/images/localytee.jpg"
 import gbc from "../../assets/images/george_brown_college_logo.jpg"
 import ycet from "../../assets/images/ycet.png"
 import st from "../../assets/images/st.jpg"
-import { Parallax } from '../parallax/Parallax'
 
-const images = require.context('../../assets/life', true)
-const imageList = images.keys().map(image => images(image));
+// Lazy load the parallax for performance
+const ExtraCuricular = lazy(() => import('../ExtraCuricular/ExtraCuricular'));
 
 export const About = () => {
   const experiece = [
@@ -73,6 +72,7 @@ export const About = () => {
       </div>
       {/* Hero Image */}
       <img className='heroImage' src={heroImage} alt="..." fetchPriority="high"></img>
+      {/* <div className='heroImage'></div> */}
     </div>
 
     {/* Skills */}
@@ -100,27 +100,9 @@ export const About = () => {
     {/* Extra curicular */}
     <div>
       <div className='sectionHeading mobileSection'>Because life’s not all about staring at a screen!</div>
-      <Parallax baseVelocity={-5}>
-        <div className='parallaxImages'>
-          {imageList?.slice(0, 9).map((img, key) => {
-            return <img src={img} alt={".."} key={`firstRow${key}`} />
-          })}
-        </div>
-      </Parallax>
-      <Parallax baseVelocity={5}>
-        <div className='parallaxImages'>
-          {imageList?.slice(9, 18).map((img, key) => {
-            return <img src={img} alt={".."} key={`SecondRow${key}`} />
-          })}
-        </div>
-      </Parallax>
-      <Parallax baseVelocity={-5}>
-        <div className='parallaxImages'>
-          {imageList?.slice(19, 27).map((img, key) => {
-            return <img src={img} alt={".."} key={`ThirdRow${key}`} />
-          })}
-        </div>
-      </Parallax>
+      <Suspense>
+        <ExtraCuricular />
+      </Suspense>
     </div>
     
     {/* Things I enjoy doing */}
