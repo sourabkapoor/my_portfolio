@@ -4,6 +4,7 @@ import { TechWall } from '../techwall/TechWall'
 import TypeWriter from '../typewriter/TypeWriter'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import {routesList} from '../../routes/AllRoutes'
+import introCover from "../../assets/images/introCover.png"
 // import LightSource from '../lightSource/LightSource'
 
 export const MainBody = () => {
@@ -12,7 +13,8 @@ export const MainBody = () => {
   return <div className='mainContainer'>
     <div class='section'>
       {/* Heading */}
-      <div class="heroText">Hi! I am Sourab Kapoor</div>
+      <img className='introImage' src={introCover} alt='...' />
+      <div className="heroText">Hi! I am Sourab Kapoor</div>
       {/* Changing subhero */}
       <div className='subHero'>
         <span>{`- `}</span>
