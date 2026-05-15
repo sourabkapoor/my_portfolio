@@ -58,7 +58,8 @@ section div {
   margin-bottom: 8px;
 
   img {
-    height: 50px;
+    max-width: 50px;
+    height: auto;
     border-radius: 7px;
   }
   div {

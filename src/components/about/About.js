@@ -2,6 +2,7 @@ import {Suspense, lazy} from 'react'
 import "./About.styles.scss"
 import heroImage from "../../assets/images/heroImage.jpeg"
 import { ProgressCard } from '../progressCard/ProgressCard'
+import screenz from "../../assets/images/screenz.jpg"
 import signalx from "../../assets/images/signalx.jpg"
 import localytee from "../../assets/images/localytee.jpg"
 import gbc from "../../assets/images/george_brown_college_logo.jpg"
@@ -13,6 +14,16 @@ const ExtraCuricular = lazy(() => import('../ExtraCuricular/ExtraCuricular'));
 
 export const About = () => {
   const experiece = [
+    {
+      logo: screenz,
+      brand: "Screenz.ai",
+      duration: "Feb 2026 - Present",
+      info: [
+        "Architected and delivered scalable, cross-browser web applications using React, Next.js, Node.js, and PostgreSQL writing clean, maintainable, production-ready code.",
+        "Designed and implemented RESTful APIs and backend services using Node.js, enabling reliable cross-platform integrations.",
+        "Drove architectural discussions around access control, RBAC, and enterprise-grade security standards",
+      ]
+    },
     {
       logo: signalx,
       brand: "SignalX",
